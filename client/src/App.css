@@ -1,0 +1,27 @@
+.main-conta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 50%;
+}
+
+form {
+  /* margin-top: 64px; */
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 4px;
+}
