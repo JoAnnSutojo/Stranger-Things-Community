@@ -3,7 +3,13 @@ import { Router } from'express';
 
 // custom modules import
 import { validateToken } from '../middlewares/validateToken.js';
-import { getPosts, addPost, editPost, removePost, likePost } from '../contollers/postMessageControllers.js';
+import {
+    getPosts, 
+    addPost, 
+    editPost, 
+    removePost, 
+    likePost 
+} from '../contollers/postMessageControllers.js';
 
 const router = Router();
 

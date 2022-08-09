@@ -1,17 +1,28 @@
 import mongoose from 'mongoose';
 
 const storySchema = mongoose.Schema({
-    caption: String,
-    username: String,
+    caption: { 
+        type: String, 
+        required: true 
+    },
+    username: {
+        type: String,
+        required: true 
+    },
     userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
     },
-    image: String,
+    image: {
+        type: String,
+        required: true 
+    },
     tags: [String],
-    type: [String],
-    default: [],
-    createdAt: {
+    likes: {
+        type: [String],
+        default: [],
+    }
+    postDate: {
         type: Date,
         immutable: true,
         default: () => Date.now()
