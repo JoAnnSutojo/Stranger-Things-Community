@@ -21,7 +21,7 @@ const storySchema = mongoose.Schema({
     likes: {
         type: [String],
         default: [],
-    }
+    },
     postDate: {
         type: Date,
         immutable: true,

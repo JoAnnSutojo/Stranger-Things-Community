@@ -9,7 +9,7 @@ export const getPosts = async (req, res) => {
       const postMessages = await Post.find();
       res.status(200).json(postMessages);
   } catch (err) {
-      res.status(404).json({ message: err.message})
+      res.status(404).json({ message: err.message })
   }
 };
 
@@ -25,9 +25,9 @@ export const addPost = async (req, res) => {
         });
         res.status(201).json(newPost);
     } catch (err) {
-        res.status(409).json({ message: err.message})
+        res.status(409).json({ message: err.message })
     }
-}
+};
 
 export const editPost = async (req, res) => {
     // identify the post - renaming the property name of id to _id (_id can be any name)
@@ -44,7 +44,7 @@ export const editPost = async (req, res) => {
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
-}
+};
 
 export const removePost = async (req, res) => {
     const { id } = req.params;
@@ -55,7 +55,7 @@ export const removePost = async (req, res) => {
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
-}
+};
 
 export const likePost = async (req, res) => {
     const { id } = req.params;
@@ -74,4 +74,4 @@ export const likePost = async (req, res) => {
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
-}
+};
