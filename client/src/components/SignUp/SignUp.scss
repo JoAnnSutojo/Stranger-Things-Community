@@ -18,12 +18,12 @@
       @include formStyle();
 
       button {
-        @include buttonStyle($white, $white);
+        @include buttonStyle($white, $lightBlue, $lightBlue);
     }
     }
     
       button {
-        @include buttonStyle($lightBlue, $white, $lightBlue);
+        @include buttonStyle($lightBlue, $darkBlue, $lightBlue);
     }
 }
 

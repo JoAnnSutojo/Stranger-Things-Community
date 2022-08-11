@@ -1,60 +1,46 @@
 .signup-conta {
   width: 100%;
   height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
 }
-
 .signup-conta h1 {
   font-size: 30px;
 }
-
 .signup-conta form {
   width: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .signup-conta form input {
   width: 100%;
   margin-bottom: 5px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px;
   font-size: 1rem;
 }
-
 .signup-conta form button {
   width: 350px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px;
   font-size: 1rem;
+  font-weight: bold;
   color: #FFFFFF;
   background-color: #3a5fe5;
+  border: 1px solid #3a5fe5;
+  cursor: pointer;
 }
-
 .signup-conta button {
   width: 350px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px;
   font-size: 1rem;
+  font-weight: bold;
   color: #3a5fe5;
   background-color: #1e193c;
-}
-/*# sourceMappingURL=SignUp.css.map */
+  border: 1px solid #3a5fe5;
+  cursor: pointer;
+}/*# sourceMappingURL=SignUp.css.map */

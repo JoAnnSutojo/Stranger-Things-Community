@@ -7,7 +7,7 @@
       width: 100%;
       margin-bottom: 5px;
       border-radius: 5px;
-      padding: 5px;
+      padding: 8px;
       font-size: 1rem;
       }
 }
@@ -15,9 +15,11 @@
 @mixin buttonStyle($color, $bgColor, $borderColor) {
     width: 350px;
     border-radius: 5px;
-    padding: 5px;
+    padding: 8px;
     font-size: 1rem;
+    font-weight: bold;
     color: $color;
     background-color: $bgColor;
     border: 1px solid $borderColor;
+    cursor: pointer;
 }
