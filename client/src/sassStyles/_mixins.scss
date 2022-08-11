@@ -12,11 +12,12 @@
       }
 }
 
-@mixin buttonStyle($color, $bgColor) {
+@mixin buttonStyle($color, $bgColor, $borderColor) {
     width: 350px;
     border-radius: 5px;
     padding: 5px;
     font-size: 1rem;
     color: $color;
     background-color: $bgColor;
+    border: 1px solid $borderColor;
 }
