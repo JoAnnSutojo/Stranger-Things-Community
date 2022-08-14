@@ -2,16 +2,16 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 // Image
-import  logo  from "./../../images/ST_Logo_4.png";
+import  Logo  from "../../resources/images/ST_Logo_4.png";
 
 // Style
 import './Header.css';
 
-function Header(props) {
+function Header({ setIsSignup }) {
     return ( 
         <div  className="header-conta">
-            <NavLink to="/" onClick={() => props.setIsHome(true)} className="logo">
-                <img src={logo} alt="stranger things logo"/>
+            <NavLink to="/" onClick={() => setIsSignup(true)} className="logo">
+                <img src={Logo} alt="stranger things logo"/>
             </NavLink>
         </div>
      );

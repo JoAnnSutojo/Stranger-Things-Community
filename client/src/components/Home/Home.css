@@ -1,0 +1,12 @@
+.auth-conta {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.auth-conta h1 {
+  font-size: 30px;
+}/*# sourceMappingURL=Home.css.map */

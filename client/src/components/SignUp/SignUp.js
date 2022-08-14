@@ -8,12 +8,12 @@ import Header from '../Header/Header.js';
 import './SignUp.css';
 
 function SignUp() {
-    const [isHome, setIsHome] = useState(true);
+    const [isSignup, setIsSignup] = useState(true);
 
     return ( 
         <>
-            <Header state={setIsHome} />
-            {isHome ?
+            <Header setIsSignup={setIsSignup} />
+            {isSignup ?
                 <div className="signup-conta">
                     <h1>Join our community today.</h1>
                     <form>
@@ -24,7 +24,7 @@ function SignUp() {
                         <button>Sign up</button>
                     </form>
                     <p>Already have an account?</p>
-                    <NavLink to="signin" onClick={() => setIsHome(false)}>
+                    <NavLink to="signin" onClick={() => setIsSignup(false)}>
                         <button>Sign in</button>
                     </NavLink>
                 </div>

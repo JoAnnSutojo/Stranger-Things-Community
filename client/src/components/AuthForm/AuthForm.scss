@@ -1,0 +1,15 @@
+@import '../../sassStyles/_mixins.scss';
+@import '../../sassStyles/_variables.scss';
+
+form {
+    @include formStyle();
+
+    button {
+        @include buttonStyle($white, $lightBlue, $lightBlue);
+    }
+}
+
+button {
+    @include buttonStyle($lightBlue, $darkBlue, $lightBlue);
+}
+

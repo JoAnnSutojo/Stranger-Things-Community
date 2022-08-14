@@ -1,18 +1,23 @@
 import { Routes, Route } from 'react-router-dom';
 
 // Components
-import SignUp from "./components/SignUp/SignUp.js";
-import SignIn from "./components/SignIn/SignIn.js";
+import Home from "./components/Home/Home.jsx";
+
+// Contexts
+import { AuthProvider } from './context/auth/index.js';
 
 function App() {
+
   return (
-    <div>
+    <AuthProvider>
+      <div>
       <Routes>
-        <Route path="/" element={<SignUp />}>
-          <Route path="/signin" element={<SignIn />} />
+        <Route path="/" element={<Home/>}>
         </Route>
       </Routes>
-    </div>
+      </div>
+    </AuthProvider>
+    
   );
 }
 
