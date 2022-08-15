@@ -1,0 +1,11 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3a5fe5;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}/*# sourceMappingURL=Footer.css.map */
