@@ -3,9 +3,9 @@ import mongoose from 'mongoose';
 const postSchema = mongoose.Schema({
     title: String,
     message: String,
-    name: String,
     creator: String,
     tags: [String],
+    selectedFile: String,
     likes: {
         type: [String],
         default: []
@@ -13,7 +13,7 @@ const postSchema = mongoose.Schema({
     createdAt: {
         type: Date,
         immutable: true,
-        default: () => Date.now()
+        default: new Date()
     }
 });
 
