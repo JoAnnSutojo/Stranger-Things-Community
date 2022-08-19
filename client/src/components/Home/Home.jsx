@@ -11,16 +11,16 @@ import { AuthContext } from '../../context/auth/index.js';
 import './Home.css';
 
 function Home() {
-    const { isSignup, setIsSignup } = useContext(AuthContext);
+    const { isSignup } = useContext(AuthContext);
 
     return ( 
-        <>
-            <Header setIsSignup={setIsSignup} />
+        <div className='homepage-conta'>
+            <Header />
             <div className="auth-conta">
-                <h1> {isSignup ? 'Join our community today.' : 'Login to our community.'} </h1>
+                <h2> {isSignup ? 'Join our community today.' : 'Login to our community.'} </h2>
                 <AuthForm />
             </div>
-        </>
+        </div>
      );
 }
 

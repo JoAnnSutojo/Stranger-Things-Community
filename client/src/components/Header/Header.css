@@ -1,14 +1,27 @@
+@font-face {
+  font-family: "Benguiat";
+  src: local("Benguiat"), url(../../resources/fonts/BenguiatStd-Medium.otf) format("opentype");
+}
 .header-conta {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-conta .logo {
+.header-conta .logo-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 25px;
   margin-left: 15px;
 }
 .header-conta img {
-  width: 550px;
+  width: 500px;
   height: auto;
+}
+.header-conta h1 {
+  font-family: Benguiat;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #ff1515;
 }/*# sourceMappingURL=Header.css.map */

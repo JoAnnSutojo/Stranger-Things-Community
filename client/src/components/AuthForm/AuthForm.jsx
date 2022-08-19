@@ -9,6 +9,10 @@ import './AuthForm.css';
 function AuthForm() {
     const { isSignup, setIsSignup } = useContext(AuthContext);
 
+    // const switchMode = () => {
+    //     setIsSignup((prevIsSignup) => !prevIsSignup)
+    // }
+
     return ( 
         <>
             <form>
@@ -25,7 +29,7 @@ function AuthForm() {
             {isSignup &&
                 <>
                     <p>Already have an account?</p>
-                    <button className='signin-btn' onClick={() => setIsSignup(false)}>Sign in</button>
+                    <button  onClick={() => setIsSignup(false)}>Sign in</button>
                 </> 
             }
         </>

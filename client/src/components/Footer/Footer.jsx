@@ -6,7 +6,7 @@ import './Footer.css'
 function Footer() {
     return (  
         <div className='footer'>
-            <span>@2022 Stranger Things Friends</span>
+            <span>@2022 Stranger Things Family</span>
         </div>
     );
 }

@@ -1,3 +1,10 @@
+@import '../../sassStyles/_variables.scss';
+
+@font-face {
+  font-family: 'Benguiat';
+  src: local('Benguiat'), url(../../resources/fonts/BenguiatStd-Medium.otf) format('opentype');
+}
+
 .header-conta {
     width: 100%;
     // height: 25vh;
@@ -6,15 +13,25 @@
     align-items: center;
    
 
-    .logo {
-         margin-top: 25px;
-         margin-left: 15px;
+   .logo-conta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        margin-left: 15px;
+   }
+
+   img {
+       width: 500px;
+       height: auto;
     }
 
-    img {
-        width: 550px;
-        height: auto;
-      }
-  }
-  
-  
+    h1 {
+        font-family: Benguiat;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        color: $red;
+    }
+}
+
+
