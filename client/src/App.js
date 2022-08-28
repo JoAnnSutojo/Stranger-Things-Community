@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 
 // Components
-import Home from './components/Home/Home.jsx';
 import AppBar from './components/AppBar/AppBar.jsx';
+import HomePage from './components/HomePage/HomePage.jsx';
+import HomeUser from './components/HomeUser/HomeUser.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 // Contexts
@@ -14,8 +15,8 @@ function App() {
     <AuthProvider>
     <AppBar />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        {/* all posts route */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomeUser />} />
       </Routes>
     <Footer />
     </AuthProvider>

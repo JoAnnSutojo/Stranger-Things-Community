@@ -8,9 +8,9 @@ import AuthForm from '../AuthForm/AuthForm.jsx';
 import { AuthContext } from '../../context/auth/index.js';
 
 // Style
-import './Home.css';
+import './HomePage.css';
 
-function Home() {
+function HomePage() {
     const { isSignup } = useContext(AuthContext);
 
     return ( 
@@ -24,4 +24,4 @@ function Home() {
      );
 }
 
-export default Home;
+export default HomePage;
