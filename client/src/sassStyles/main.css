@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3a5fe5;
+  background-color: #1e193c;
+}
+
+#root {
+  height: 100%;
+}
+
+.main-auth-conta {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-auth-conta .logo-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.main-auth-conta .logo-conta img {
+  width: 500px;
+  height: auto;
+}
+.main-auth-conta .auth-form-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-auth-conta .auth-form-conta h1 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+.main-auth-conta .auth-form-conta form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.main-auth-conta .auth-form-conta form input {
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1rem;
+}
+.main-auth-conta .auth-form-conta form button {
+  width: 350px;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #3a5fe5;
+  border: 1px solid #3a5fe5;
+  cursor: pointer;
+}
+.main-auth-conta .auth-form-conta .signin-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.main-auth-conta .auth-form-conta .signin-conta p {
+  font-size: 1.2rem;
+}
+.main-auth-conta .auth-form-conta .signin-conta button {
+  width: 350px;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3a5fe5;
+  background-color: #1e193c;
+  border: 1px solid #3a5fe5;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .main-auth-conta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.appbar-conta {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #3a5fe5;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.appbar-conta .logo {
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.appbar-conta .logo img {
+  width: 100px;
+}
+.appbar-conta .searchbar-conta {
+  flex: 3;
+}
+.appbar-conta .searchbar-conta .searchbar {
+  width: 100%;
+  height: 35px;
+  background-color: #1e193c;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.appbar-conta .searchbar-conta .searchbar .search-icon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.appbar-conta .searchbar-conta .searchbar .search-input {
+  width: 70%;
+  margin-left: 5px;
+  background-color: transparent;
+}
+.appbar-conta .searchbar-conta .searchbar .search-input::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.appbar-conta .searchbar-conta .searchbar .search-input:-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.appbar-conta .searchbar-conta .searchbar .search-input::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.appbar-conta .appbar-auth {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.appbar-conta .appbar-auth button {
+  width: 350px;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1e193c;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  width: 100px;
+}/*# sourceMappingURL=main.css.map */

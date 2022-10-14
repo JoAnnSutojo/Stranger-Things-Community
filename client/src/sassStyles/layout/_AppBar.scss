@@ -1,10 +1,5 @@
-@import '../../sassStyles/_mixins.scss';
-@import '../../sassStyles/_variables.scss';
-
-@font-face {
-  font-family: 'Benguiat';
-  src: local('Benguiat'), url(../../resources/fonts/BenguiatStd-Medium.otf) format('opentype');
-}
+@import '../../sassStyles/abstracts/mixins';
+@import '../../sassStyles//abstracts/variables';
 
 .appbar-conta{
   position: fixed;

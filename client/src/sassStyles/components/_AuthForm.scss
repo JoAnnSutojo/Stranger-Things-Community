@@ -1,0 +1,68 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.main-auth-conta {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo-conta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        margin-left: 15px;
+
+        img {
+            width: 500px;
+            height: auto;
+         }
+    }
+
+    .auth-form-conta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        form {
+            @include formStyle();
+            margin-bottom: 1.5rem;
+        
+            button {
+                @include buttonStyle($white, $lightBlue, $lightBlue);
+            }
+        }
+        
+        .signin-conta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            button {
+                @include buttonStyle($lightBlue, $darkBlue, $lightBlue);
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .main-auth-conta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
