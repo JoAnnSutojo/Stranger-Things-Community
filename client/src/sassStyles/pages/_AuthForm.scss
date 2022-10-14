@@ -13,11 +13,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 25px;
-        margin-left: 15px;
 
         img {
-            width: 500px;
+            width: 400px;
             height: auto;
          }
     }
@@ -29,7 +27,7 @@
 
         h1 {
             font-size: 2rem;
-            margin: 1.5rem 0;
+            margin-bottom: 1.5rem;
         }
 
         form {
@@ -60,8 +58,7 @@
 
 @media (min-width: 800px) {
     .main-auth-conta {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
     }
 }
 

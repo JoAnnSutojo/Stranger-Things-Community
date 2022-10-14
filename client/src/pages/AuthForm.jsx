@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../context/auth/index.js';
 
 // Image
-import  Logo  from '../resources/images/ST_Logo_4.png';
+import  Logo  from '../resources/images/STF_logo.png';
 
 
 function AuthForm() {
@@ -21,7 +21,6 @@ function AuthForm() {
             to="/" 
             onClick={() => setIsSignup(true)} className="logo-conta">
                 <img src={Logo} alt="stranger things logo"/>
-                {/* <h1>-- Family --</h1> */}
             </NavLink>
             <div className="auth-form-conta">
                 <h1> {isSignup ? 'Join our community today.' : 'Login to our community.'} </h1>

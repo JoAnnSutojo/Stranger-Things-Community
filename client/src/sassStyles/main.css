@@ -21,85 +21,6 @@ body {
   height: 100%;
 }
 
-.main-auth-conta {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main-auth-conta .logo-conta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 25px;
-  margin-left: 15px;
-}
-.main-auth-conta .logo-conta img {
-  width: 500px;
-  height: auto;
-}
-.main-auth-conta .auth-form-conta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-auth-conta .auth-form-conta h1 {
-  font-size: 2rem;
-  margin: 1.5rem 0;
-}
-.main-auth-conta .auth-form-conta form {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-}
-.main-auth-conta .auth-form-conta form input {
-  width: 100%;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  padding: 8px;
-  font-size: 1rem;
-}
-.main-auth-conta .auth-form-conta form button {
-  width: 350px;
-  border-radius: 5px;
-  padding: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #3a5fe5;
-  border: 1px solid #3a5fe5;
-  cursor: pointer;
-}
-.main-auth-conta .auth-form-conta .signin-conta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
-.main-auth-conta .auth-form-conta .signin-conta p {
-  font-size: 1.2rem;
-}
-.main-auth-conta .auth-form-conta .signin-conta button {
-  width: 350px;
-  border-radius: 5px;
-  padding: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #3a5fe5;
-  background-color: #1e193c;
-  border: 1px solid #3a5fe5;
-  cursor: pointer;
-}
-
-@media (min-width: 800px) {
-  .main-auth-conta {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .appbar-conta {
   position: fixed;
   top: 0;
@@ -169,4 +90,81 @@ body {
   border: 1px solid #FFFFFF;
   cursor: pointer;
   width: 100px;
+}
+
+.main-auth-conta {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-auth-conta .logo-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-auth-conta .logo-conta img {
+  width: 400px;
+  height: auto;
+}
+.main-auth-conta .auth-form-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-auth-conta .auth-form-conta h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.main-auth-conta .auth-form-conta form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.main-auth-conta .auth-form-conta form input {
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1rem;
+}
+.main-auth-conta .auth-form-conta form button {
+  width: 350px;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #3a5fe5;
+  border: 1px solid #3a5fe5;
+  cursor: pointer;
+}
+.main-auth-conta .auth-form-conta .signin-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.main-auth-conta .auth-form-conta .signin-conta p {
+  font-size: 1.2rem;
+}
+.main-auth-conta .auth-form-conta .signin-conta button {
+  width: 350px;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3a5fe5;
+  background-color: #1e193c;
+  border: 1px solid #3a5fe5;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .main-auth-conta {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */
