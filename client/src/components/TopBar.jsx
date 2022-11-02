@@ -5,12 +5,9 @@ import { Search } from '@material-ui/icons';
 import { Avatar } from '@material-ui/core';
 
 // Image
-import Logo from '../../resources/images/st_logo_solid.png'
+import Logo from '../resources/images/STF_logo.png'
 
-// Style
-import './AppBar.css';
-
-function AppBar() {
+function TopBar() {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("profile")))
 
     const navigate = useNavigate();
@@ -28,43 +25,32 @@ function AppBar() {
       }, [location]);
 
       const logout = () => {
-        navigate("/");
         setUser(null);
+        navigate("/");
       };
 
     return ( 
-        <div className='appbar-conta'>
-            <div className='logo'>
-                <img src={Logo} alt="stranger things logo" />
-             </div>
-
-            {user &&
-                <div className='searchbar-conta'>
-                    <div className='searchbar'>
-                       <Search className='search-icon' />
-                       <input
-                       placeholder='Search for post'
-                       className='search-input'
-                       /> 
-                    </div>
-                </div>
-            }
-
-            <div className='appbar-auth'>
-                {!user ? (
-                    <Link to='/'>
-                        <button>Log In</button>
-                    </Link>
-                    ) : (
-                    <>
-                        <Avatar>J</Avatar>
-                        <button onClick={logout}>Log Out</button>
-                    </>
-                    )
-                } 
+        <div className='topbar-conta'>
+            <div className='topbar-logo'>
+                <Link to='/'>
+                    <img src={Logo} alt="stranger things logo" />
+                </Link>
+            </div>
+            <div className='searchbar-conta'>
+                 <div className='searchbar'>
+                    <Search className='search-icon' />
+                    <input
+                    placeholder='Search for post'
+                    className='search-input'
+                    /> 
+                 </div>
+            </div>
+            <div className='topbar-auth'>
+                <Avatar>J</Avatar>
+                <button onClick={logout}>Log Out</button>
             </div>
         </div>
      );
 }
 
-export default AppBar;
+export default TopBar;

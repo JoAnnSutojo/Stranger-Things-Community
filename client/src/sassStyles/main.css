@@ -21,7 +21,7 @@ body {
   height: 100%;
 }
 
-.appbar-conta {
+.topbar-conta {
   position: fixed;
   top: 0;
   width: 100%;
@@ -32,19 +32,19 @@ body {
   align-items: center;
   padding: 1rem;
 }
-.appbar-conta .logo {
+.topbar-conta .topbar-logo {
   flex: 3;
   display: flex;
   justify-content: flex-start;
   cursor: pointer;
 }
-.appbar-conta .logo img {
-  width: 100px;
+.topbar-conta .topbar-logo img {
+  width: 80px;
 }
-.appbar-conta .searchbar-conta {
+.topbar-conta .searchbar-conta {
   flex: 3;
 }
-.appbar-conta .searchbar-conta .searchbar {
+.topbar-conta .searchbar-conta .searchbar {
   width: 100%;
   height: 35px;
   background-color: #1e193c;
@@ -52,34 +52,34 @@ body {
   display: flex;
   align-items: center;
 }
-.appbar-conta .searchbar-conta .searchbar .search-icon {
+.topbar-conta .searchbar-conta .searchbar .search-icon {
   font-size: 20px;
   margin-left: 10px;
 }
-.appbar-conta .searchbar-conta .searchbar .search-input {
+.topbar-conta .searchbar-conta .searchbar .search-input {
   width: 70%;
   margin-left: 5px;
   background-color: transparent;
 }
-.appbar-conta .searchbar-conta .searchbar .search-input::-moz-placeholder {
+.topbar-conta .searchbar-conta .searchbar .search-input::-moz-placeholder {
   color: #FFFFFF;
   opacity: 1;
 }
-.appbar-conta .searchbar-conta .searchbar .search-input:-ms-input-placeholder {
+.topbar-conta .searchbar-conta .searchbar .search-input:-ms-input-placeholder {
   color: #FFFFFF;
   opacity: 1;
 }
-.appbar-conta .searchbar-conta .searchbar .search-input::placeholder {
+.topbar-conta .searchbar-conta .searchbar .search-input::placeholder {
   color: #FFFFFF;
   opacity: 1;
 }
-.appbar-conta .appbar-auth {
+.topbar-conta .topbar-auth {
   flex: 3;
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
 }
-.appbar-conta .appbar-auth button {
+.topbar-conta .topbar-auth button {
   width: 350px;
   border-radius: 5px;
   padding: 8px;
@@ -89,7 +89,21 @@ body {
   background-color: #1e193c;
   border: 1px solid #FFFFFF;
   cursor: pointer;
-  width: 100px;
+  width: 85px;
+}
+
+.feed-conta {
+  margin-top: 50px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.postform-conta {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 }
 
 .main-auth-conta {
@@ -99,6 +113,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .main-auth-conta .logo-conta {
   display: flex;

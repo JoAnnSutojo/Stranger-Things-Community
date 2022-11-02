@@ -1,26 +1,22 @@
 import React, { useContext } from 'react';
 
 // Components
-// import Header from '../Header/Header.jsx';
-// import AuthForm from '../AuthForm/AuthForm.jsx';
+import TopBar from '../components/TopBar.jsx';
+import Feed from '../components/Feed/Feed.jsx';
 
 // Contexts
 import { AuthContext } from '../context/auth/index.js';
 
-// Style
-// import './HomePage.css';
 
-function HomePage() {
+function Home() {
     const { isSignup } = useContext(AuthContext);
 
     return ( 
-        <div >
-            <div >
-          
-                
-            </div>
-        </div>
+        <>
+           <TopBar />
+           <Feed />
+        </>
      );
 }
 
-export default HomePage;
+export default Home;

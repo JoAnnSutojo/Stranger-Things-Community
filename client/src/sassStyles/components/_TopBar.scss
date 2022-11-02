@@ -1,7 +1,7 @@
 @import '../../sassStyles/abstracts/mixins';
-@import '../../sassStyles//abstracts/variables';
+@import '../../sassStyles/abstracts/variables';
 
-.appbar-conta{
+.topbar-conta{
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,14 +12,14 @@
   align-items: center;
   padding: 1rem;
 
-  .logo  {
+  .topbar-logo  {
     flex: 3;
     display: flex;
     justify-content: flex-start;
     cursor: pointer;
 
     img {
-        width: 100px;
+        width: 80px;
     }
   }
 
@@ -52,8 +52,7 @@
     }
   }
  
-
-  .appbar-auth {
+  .topbar-auth {
     flex: 3;
     display: flex;
     justify-content: flex-end;
@@ -61,7 +60,7 @@
 
     button {
         @include buttonStyle($white, $darkBlue, $white);
-        width: 100px;
+        width: 85px;
     }
   }
 }
