@@ -14,9 +14,9 @@ function PostForm() {
             </div>
             <hr className='postHr' />
             <form className="postform-bottom">
-                <div className="postform-icons">
-                        <PermMedia />
-                        <EmojiEmotions />
+                <div className="postform-icons-conta">
+                        <PermMedia className="postform-icons" />
+                        <EmojiEmotions className="postform-icons" />
                 </div>
                 <button>
                     Post

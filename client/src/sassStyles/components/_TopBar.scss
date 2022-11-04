@@ -9,58 +9,84 @@
   background-color: $lightBlue;
   color: $white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 
-  .topbar-logo  {
-    flex: 3;
+  .topbar-left  {
+    // flex: 1;
     display: flex;
-    justify-content: flex-start;
+    // justify-content: flex-start;
+    align-items: center;
     cursor: pointer;
 
-    img {
-        width: 80px;
+    .topbar-logo {
+      color: $red;
+      // width: 80px;
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
     }
+
+    // img {
+    //     height: 100%;
+    //     width: 50px;
+    // }
+
+    
   }
 
-  .searchbar-conta {
-    flex: 3;
+  // .searchbar-conta {
+  //   flex: 4;
 
-    .searchbar {
-        width: 100%;
-        height: 35px;
-        background-color: $darkBlue;
-        border-radius: 30px;
-        display: flex;
-        align-items: center;
+  //   .searchbar {
+  //       width: 100%;
+  //       height: 35px;
+  //       background-color: $darkBlue;
+  //       border-radius: 30px;
+  //       display: flex;
+  //       align-items: center;
     
-        .search-icon {
-            font-size: 20px;
-            margin-left: 10px;
-          }
+  //       .search-icon {
+  //           font-size: 20px;
+  //           margin-left: 10px;
+  //         }
     
-        .search-input {
-            width: 70%;
-            margin-left: 5px;
-            background-color: transparent;
-        }
+  //       .search-input {
+  //           width: 70%;
+  //           margin-left: 5px;
+  //           background-color: transparent;
+  //       }
 
-        .search-input::placeholder {
-            color: $white;
-            opacity: 1;
-        }       
-    }
-  }
+  //       .search-input::placeholder {
+  //           color: $white;
+  //           opacity: 1;
+  //       }       
+  //   }
+  // }
  
-  .topbar-auth {
-    flex: 3;
+  .topbar-right {
+    // flex: 1;
     display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
+    // justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
 
     button {
-        @include buttonStyle($white, $darkBlue, $white);
-        width: 85px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .topbar-icons {
+        fill: $darkBlue;
+        transform: scale(1.2);
+      }
+
     }
+
   }
 }

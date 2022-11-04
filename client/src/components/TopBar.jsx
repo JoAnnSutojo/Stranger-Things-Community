@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import decode from 'jwt-decode';
-import { Search } from '@material-ui/icons';
+import { Search, ExitToApp } from '@material-ui/icons';
 import { Avatar } from '@material-ui/core';
 
 // Image
@@ -31,23 +31,29 @@ function TopBar() {
 
     return ( 
         <div className='topbar-conta'>
-            <div className='topbar-logo'>
-                <Link to='/'>
-                    <img src={Logo} alt="stranger things logo" />
+            <div className='topbar-left'>
+                <Link className='topbar-logo' to='/'>
+                    {/* <img className='topbar-logo' src={Logo} alt="stranger things logo" /> */}
+                    Stranger Things
                 </Link>
             </div>
-            <div className='searchbar-conta'>
+            {/* <div className='searchbar-conta'>
                  <div className='searchbar'>
                     <Search className='search-icon' />
                     <input
                     placeholder='Search for post'
                     className='search-input'
-                    /> 
+                    />  
                  </div>
-            </div>
-            <div className='topbar-auth'>
-                <Avatar>J</Avatar>
-                <button onClick={logout}>Log Out</button>
+            </div> */}
+            <div className='topbar-right'>
+                {/* <Avatar>J</Avatar> */}
+                <button>
+                  <Search className='topbar-icons' />
+                </button>
+                <button onClick={logout}>
+                  <ExitToApp className='topbar-icons' />
+                </button>
             </div>
         </div>
      );

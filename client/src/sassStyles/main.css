@@ -29,88 +29,55 @@ body {
   background-color: #3a5fe5;
   color: #FFFFFF;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
-.topbar-conta .topbar-logo {
-  flex: 3;
+.topbar-conta .topbar-left {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   cursor: pointer;
 }
-.topbar-conta .topbar-logo img {
-  width: 80px;
+.topbar-conta .topbar-left .topbar-logo {
+  color: #ff1515;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
-.topbar-conta .searchbar-conta {
-  flex: 3;
+.topbar-conta .topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.topbar-conta .searchbar-conta .searchbar {
-  width: 100%;
+.topbar-conta .topbar-right button {
+  width: 35px;
   height: 35px;
-  background-color: #1e193c;
-  border-radius: 30px;
+  border-radius: 50%;
+  background: #FFFFFF;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-.topbar-conta .searchbar-conta .searchbar .search-icon {
-  font-size: 20px;
-  margin-left: 10px;
-}
-.topbar-conta .searchbar-conta .searchbar .search-input {
-  width: 70%;
-  margin-left: 5px;
-  background-color: transparent;
-}
-.topbar-conta .searchbar-conta .searchbar .search-input::-moz-placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.topbar-conta .searchbar-conta .searchbar .search-input:-ms-input-placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.topbar-conta .searchbar-conta .searchbar .search-input::placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.topbar-conta .topbar-auth {
-  flex: 3;
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-}
-.topbar-conta .topbar-auth button {
-  width: 350px;
-  border-radius: 5px;
-  padding: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #1e193c;
-  border: 1px solid #FFFFFF;
-  cursor: pointer;
-  width: 85px;
+.topbar-conta .topbar-right button .topbar-icons {
+  fill: #1e193c;
+  transform: scale(1.2);
 }
 
 .feed-conta {
+  width: 100%;
   margin-top: 50px;
   padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .postform-conta {
-  grid-column-start: 2;
-  grid-column-end: 2;
   border-radius: 10px;
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  font-size: 18px;
+  padding: 10px;
 }
 .postform-conta .postform-top {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 5px 0;
 }
 .postform-conta .postform-top .postform-input {
   width: 100%;
@@ -121,18 +88,22 @@ body {
   outline: none;
 }
 .postform-conta .postHr {
-  margin: 10px;
+  margin: 5px;
   border-top: 1px solid #1e0707;
 }
 .postform-conta .postform-bottom {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 2.5px 0;
 }
-.postform-conta .postform-bottom .postform-icons {
+.postform-conta .postform-bottom .postform-icons-conta {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.5rem;
+}
+.postform-conta .postform-bottom .postform-icons-conta .postform-icons {
+  fill: #3a5fe5;
+  transform: scale(1.15);
 }
 .postform-conta .postform-bottom button {
   width: 350px;
