@@ -9,13 +9,20 @@ function PostForm() {
                 <Avatar>J</Avatar>
                 <input
                 placeholder="What's on your mind Jo?"
+                className='postform-input'
                 />
             </div>
             <hr className='postHr' />
-           <div className="postform-bottom">
-                <PermMedia />
-                <EmojiEmotions />
-           </div>
+            <form className="postform-bottom">
+                <div className="postform-icons">
+                        <PermMedia />
+                        <EmojiEmotions />
+                </div>
+                <button>
+                    Post
+                </button>
+            </form>
+            
            
         </div>
      );
